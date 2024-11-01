@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 98vw;
+    margin: 0;
+    background-color: black;
+}
+.title-container {
+    position: relative;
+    margin: 50px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 3rem;
+    color: blueviolet;
+    width: 80%;
+    text-align: center;
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 50px;
+}
+.input-container {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+.input-container > input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    border:none;
+    outline: none;
+}
+button {
+    padding: 10px;
+    background-color: rgba(238, 109, 176, 1);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 1.2s ease;
+    margin-left: 20px;
+}
+button:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+button > img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+button:hover img {
+    transform: scale(1.4);
+}
+
+.list-container > ul {
+    list-style-type: none;
+    padding: 0;
+}
+.list-container > ul > li {
+    display: flex;
+    align-items: center;
+    padding: 10px; 
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px 0;
+    margin-right: 10px;
+    background-color: lightpink;
+    border-radius: 15px;
+    min-width: 100%;
+}
+.list-container > ul > li > input:checked + label {
+    text-decoration: line-through;
+    color: grey;
+}
+.list-container > ul > li:hover {
+    background-color: lightblue;
+}
+.list-container > ul > li > input {
+    cursor: pointer;
+}
+.list-container > ul > li > label {
+    font-size: 1rem;
+    margin-left: 10px;
+}
+.list-container > ul > li > img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: auto;
+}
+.list-container > ul > li > img:hover {
+    transform: scale(1.2);
+    background-color: red;
+    padding: 1px;
+    border-radius: 4px;
+}
